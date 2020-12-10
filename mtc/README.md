@@ -4,7 +4,7 @@ This guide will provide you with hands-on exposure to the new OpenShift Migratio
 
 ## Description
 
-Migrates application workloads from Cluster A to Cluster B (includes ui, controller, Velero/Restic, plugins, etc). This application is available for installation through the Operator Hub/OLM. This course requires both the CAM OCP3 and OCP4 services from RHPDS.
+Migrates application workloads from Cluster A to Cluster B (includes ui, controller, Velero/Restic, plugins, etc). This application is available for installation through the Operator Hub/OLM. This course requires both the CAM OCP3 and OCP4 services from OPENTLC.
 
 ## Goals
 
@@ -38,7 +38,7 @@ Step 5: Wait for both services to become available.  ```This will take ~75 min.`
 
 Step 6: Open a terminal window with two tabs.  One tab for the source OCP3 cluster and one tab for the destination OCP4 cluster.
 
-Step 7: In the OCP3 tab, ssh into the OCP3 bastion host using the information provided in RHPDS for the provisioned service.
+Step 7: In the OCP3 tab, ssh into the OCP3 bastion host using the information provided in OPENTLC for the provisioned service.
 
 ```bash
 $ ssh niroy-redhat.com@bastion.ed3e.example.opentlc.com
@@ -50,7 +50,7 @@ niroy-redhat.com@bastion.ed3e.example.opentlc.com's password:
 ```
 In the home directory, locate the cluster.info file.
 
-Step 8: In the OCP4 tab, ssh into the OCP4 bastion host using the information provided in RHPDS for the provisioned service.
+Step 8: In the OCP4 tab, ssh into the OCP4 bastion host using the information provided in OPENTLC for the provisioned service.
 
 ```bash
 $ ssh niroy-redhat.com@bastion.4a97.sandbox824.opentlc.com
@@ -76,7 +76,7 @@ domain=.sandbox824.opentlc.com
 student_name=niroy-redhat.com
 ```
 
-Step 10:  In the OCP4 terminal tab, oc login to the OCP4 cluster using the information provided by RHPDS:
+Step 10:  In the OCP4 terminal tab, oc login to the OCP4 cluster using the information provided by OPENTLC:
 
 ```bash
 $ oc login https://api.cluster-4a97.4a97.sandbox824.opentlc.com:6443 -u admin -p r3dh4t1!
